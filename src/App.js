@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Categories from './Categories.js';
+
+import {
+    Router,
+    Route,
+    BrowserRouter,
+    Switch
+
+} from "react-router-dom";
+import * as reactDom from "react-dom";
+
+import Products from './Products';
+
+import { createBrowserHistory } from 'history'
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    const newHistory = createBrowserHistory();
+
+    return (<div className="App">
+
+        {
+           
+            <Router>
+               <div>
+                    <Switch>
+                       <Route path="/Categories">
+                        <Categories />
+                        </Route>
+                    </Switch>
+                </div>
+             </Router>
+           
+        }
     </div>
-  );
+
+    )
 }
+
+
 
 export default App;

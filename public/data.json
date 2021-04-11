@@ -1,0 +1,48 @@
+[{
+
+        "category": "Dairy-products",
+
+        "products": [{
+                "name": "milk",
+                "price": 5.5
+            },
+            {
+                "name": "cheese",
+                "price": 6
+            }
+
+        ]
+    },
+    {
+
+        "category": "drinks",
+
+        "products": [{
+                "name": "wine",
+                "price": 25
+            },
+            {
+                "name": "jump",
+                "price": 7.5
+            }
+
+        ]
+
+    },
+    {
+        "category": "sweet",
+
+        "products": [{
+                "name": "candy",
+                "price": 1
+            },
+            {
+                "name": "Bubble-gum",
+                "price": 0.5
+            }
+
+        ]
+
+    }
+
+]
